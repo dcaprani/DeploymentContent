@@ -1,0 +1,26 @@
+<html>
+	<head></head>
+	<body>
+	<script type="text/javascript" src="validate.min.js"></script>
+		<div id = "eb" class="error_box" style="display: block;"></div>
+		<form name="franny">
+			<input name="email" />
+			<input type="submit" name="submit"/>
+		</form>
+		<script>
+			var validator = new FormValidator('franny', [{
+			name: 'email',
+			rules: 'valid_email'
+		}], function(errors, event) {
+			if (errors.length > 0) {
+			 var errorString = '';
+			for (var i = 0, errorLength = errors.length; i < errorLength; i++) {
+				errorString += errors[i].message + '<br />';
+			}
+			document.getElementById(eb).innerHTML = errorString;
+			}
+		});
+		</script>
+	</body>
+	
+</html>

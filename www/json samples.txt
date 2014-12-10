@@ -1,0 +1,77 @@
+{
+"firstname":"Derek",
+"lastname":"sas",
+"prefix":"083",
+"mobile":"",
+"email":"deesee@dc.com",
+"course":"",
+"availability":"Yes",
+"adverseries":"Yes"
+}
+
+{
+"firstname":"Derek",
+"lastname":"sas",
+"prefix":"083",
+"mobile":"",
+"email":"deesee@dc.com",
+"course":"",
+"mon":"on",
+"monpm":"on",
+"tue":"on",
+"tuepm":"on",
+"wed":"on",
+"wedpm":"on",
+"fri":"on",
+"friap":"on",
+"availability":"Yes",
+"adverseries":"Yes"
+}
+
+{
+"firstname":"Derek",
+"lastname":"Caprani",
+"prefix":"087",
+"mobile":"9679097",
+"email":"deesee@dc.com",
+"course":"Difficult",
+"experience":"very_good",
+"WeekDay":
+	[
+		"Monday",
+		"Tuesday",
+		"Wednesday",
+		"Thursday",
+		"Friday"
+	],
+"MonToD":"am",
+"TueToD":"pm",
+"WedToD":"am",
+"ThurToD":"pm",
+"FriToD":"am",
+"availability":"Yes",
+"adverseries":"Yes"}
+
+
+{
+	"firstname":"Mary",
+	"lastname":"Hadalittlelamb",
+	"prefix":"085",
+	"mobile":"1531435",
+	"email":"mhall@bbbs.baa",
+	"course":"Fine",
+	"experience":"expert",
+	"WeekDay":
+		[
+			"Monday",
+			"Tuesday",
+			"Thursday",
+			"Friday"
+		],
+	"Monday":"pm",
+	"Tuesday":"am",
+	"Thursday":"am",
+	"Friday":"pm",
+	"availability":"Maybe",
+	"adverseries":"No"
+}

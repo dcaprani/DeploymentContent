@@ -1,0 +1,1 @@
+This Banner contains JQuery based JavaScript which generates the bouncing Table-Tennis Ball

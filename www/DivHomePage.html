@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript" src = "ajax.js"></script>
+<link rel="stylesheet" type="text/css" href="TTCStyle.css" />
+<style type = "text/css">
+
+	body
+	{
+		background-image: url(project_images/Graded_Green.jpg);
+		background-repeat: repeat-x;
+		background-attachment: fixed;
+	}
+
+	#content
+	{
+		float: left;
+		margin-top: 10px;
+		margin-left: 10px;
+		width: 72%;
+		height: 100%;
+		margin-right: 0px;
+	}
+
+	#iFrame
+	{
+		width: 100%;
+		height: 600px;
+		float: right;
+		border: 0px;
+	}
+
+</style>
+</head>
+<body>
+<div id = "banner" onmouseover = "getData('BannerDescription.txt', 'descDiv')" onmouseleave="getData('nothing.txt', 'descDiv')">
+		<ul id="wrapper">
+			<li> </li>
+		</ul>
+		<div id = "leftnav" >
+			<img src="project_images/Table_Tennis_Logo.jpg" alt = "Table' Tennis Logo" width = "116" height = "109" />
+		</div>
+
+
+		<div id = "rightnav">
+			<img src="project_images/Table_Tennis_Logo.jpg" alt = "Table Tennis Logo" width = "116" height = "109" />
+		</div>
+		<div id = "name">
+			<h1>TTC</h1>
+		</div>
+	</div>
+	<div id = "descDiv"> </div>
+	<div>
+		<div id = "menu_box">
+				<div id = "menu">
+						<div class= "links">
+							<ul class = "textLinks">
+								<li><a href = "Project_Trial_Main_Page.html" target = "content">Home</a></li><br>
+								<li onmouseover = "getData('AboutDescription.txt', 'descDiv')" onmouseleave="getData('nothing.txt', 'descDiv')"><a href = "AboutClub.html" target = "content">About our Club</a></li><br>
+								<!--<li><a href = "Expert_Tips.html" target = "content">Expert Tips</a></li><br>
+								<li><a href = "Table_Tennis_Rules.html" target = "content">Rules</a></li><br>-->
+								<li><a href = "Table_Tennis_Equipment.html" target = "content">Equipment</a></li><br>
+								<li><a href = "applicationForm.php" target = "content">Membership Form</a></li><br>
+							</ul>
+							<ul class = "logo">
+								<li><a href = "http://www.irishtabletennis.com" target = "content"><img src = "project_images/itta_logo.jpg" width = "74" height =  "75" alt="Link to Irish Table Tennis Assoc Website" /></a></li>
+							</ul>
+						</div>
+				</div>
+		</div>
+		<div id="content">
+			<iframe id = "iFrame" name="content" src="Project_Trial_Main_Page.html"></iframe>
+		</div>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type = "text/javascript" src ="js/bouncy.js">
+		/*$.fn.bounce = function(options) {
+
+		    var settings = $.extend({
+		        speed: 10
+		    }, options);
+
+		    return $(this).each(function() {
+
+		        var $this = $(this),
+		            $parent = $this.parent(),
+		            height = $parent.height(),
+		            width = $parent.width(),
+		            top = Math.floor(Math.random() * (height / 2)) + height / 4,
+		            left = Math.floor(Math.random() * (width / 2)) + width / 4,
+		            vectorX = settings.speed * (Math.random() > 0.5 ? 1 : -1),
+		            vectorY = settings.speed * (Math.random() > 0.5 ? 1 : -1);
+
+		        // place initialy in a random location
+		        $this.css({
+		            'top': top,
+		            'left': left
+		        }).data('vector', {
+		            'x': vectorX,
+		            'y': vectorY
+		        });
+
+		        var move = function($e) {
+
+		            var offset = $e.offset(),
+		                width = $e.width(),
+		                height = $e.height(),
+		                vector = $e.data('vector'),
+		                $parent = $e.parent();
+
+		            if (offset.left <= 80 && vector.x < 0) {
+		                vector.x = -1 * vector.x;
+		            }
+		            if ((offset.left + width-60) >= $parent.width()) {
+		                vector.x = -1 * vector.x;
+		            }
+		            if (offset.top <= 20 && vector.y < 0) {
+		                vector.y = -1 * vector.y;
+		            }
+		            if ((offset.top + height) >= $parent.height()) {
+		                vector.y = -1 * vector.y;
+		            }
+
+		            $e.css({
+		                'top': offset.top + vector.y + 'px',
+		                'left': offset.left + vector.x + 'px'
+		            }).data('vector', {
+		                'x': vector.x,
+		                'y': vector.y
+		            });
+
+		            setTimeout(function() {
+		                move($e);
+		            }, 50);
+
+		        };
+
+		        move($this);
+		    });
+
+		};
+
+		$(function() {
+		    $('#wrapper li').bounce({
+		        'speed': 7
+		    });
+});*/
+	</script>
+
+</body>
+</html>

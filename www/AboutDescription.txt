@@ -1,0 +1,1 @@
+Clicking this link calls the about page which uses the Liquid-Slider JQuery Plug-In. Use the left/right arrows to navigate through the slides.
